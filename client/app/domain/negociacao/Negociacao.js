@@ -3,11 +3,11 @@ class Negociacao {
 	
 	
 	
-	constructor(data, quantidade, valor) {
+	constructor(_data, _quantidade, _valor) {
 		
 		// Copia os dados passado no construtor para o objeto instanciado
-		Object.assign(this, { _data: new Date(date.getTime()), _quantidade: quantidade, _valor: valor});
-
+		Object.assign(this, { _quantidade, _valor});
+		this._data = new Date(_data.getTime());
 		Object.freeze(this);
 	}
 
